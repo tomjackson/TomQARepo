@@ -1,0 +1,4 @@
+CommandBuilders.add('action', function(window) {
+        return { command: "echo", target: "It works" };
+   }
+);

@@ -1,0 +1,28 @@
+Selenium.prototype.doTypeRandomCity = function(locator){
+	var name = ["Shriner", "Maggard", "Bornhauser", "Alexander", "Gearhiser", "Crist", "Evans", "Fountain", "Feathers", "Gay", "Lintner", "Richardson", "Tyler", "McGalliard", "Bramble", "Kaelin", "Ekart", "Todorich", "Rowe", "Williams", "Kreydik", "O'Malley", "Ashcraft", "Boutote", "Gerdon", "Knisely", "Dunn", "Dawson", "Wade", "Coon", "Lepping", "Gaffney", "Laureano", "Grabbe", "Latshaw", "Bell", "Brock", "Rockey", "Brock", "Smith", "Wilson", "Sargeant", "Hunter", "Hart", "Cobb", "Jones", "Henderson", "Zinser", "Dexter", "Washington", "Hogan", "Lutes", "Anderson", "Thompson", "Bilanovic", "Smith", "Pool", "Heilig", "Zipper", "MacGeorge", "Massey", "Jones", "McDougale", "Hancock", "Rishel", "Jones", "Keller", "Johnson", "Lyons", "Sadler", "Trujillo", "Pool", "Clinefelter", "Brady", "Faber", "Tinsley", "Rittenhouse", "Heckard", "Rittenhouse", "Mandzo", "Benson", "Grabbe", "Rittenhouse", "Robey", "Bush", "Hartvigsen", "Heckard", "Espinoza", "Johnson", "Parrish", "Kleyer", "Schuler", "Henry", "Smith", "Thien", "Harper", "Hatcher", "Kaufman", "Oliver", "Bitler", "Brussese", "Lazarewicz", "Sexton", "Derossett", "Heckard", "Brown", "Kestler", "Bitler", "Johnson", "Lutes", "Sizemore", "Mitchell", "Tyree", "Strain", "Karczewski", "Cady", "Orm", "Petty", "Baldon-Gutter", "Phillips", "Perry", "Shepherd", "Roller", "Lay", "Nash", "Fox", "Ginn", "Bell", "Hartzog", "Carter", "Cooper", "Hall", "Anderson", "Lembcke", "Wheeler", "Akhtar", "Walls", "Ennis", "Books", "Soule ", "Lynn", "Burch", "Leake", "Larimore", "Griffin", "Orm", "Bibbs", "Leitch", "Ahlbrand", "Schuler", "Conrad", "Eigelbach", "Harris", "Hayes", "Smith", "Magda", "Welsh", "Hanson", "Hutzell", "Gentzel", "Baise", "Reed", "Bonistalli", "Delich", "Werts", "Lucas", "Hibbard", "Salyer", "Boyd ", "Winchell", "Lampton", "Grigsby", "Sattich", "Gouge", "Van Laan", "Gettis", "Kilgore", "Hill", "Hennis", "Spaulding", "Jacobsen", "Elsesser", "DeJohns", "Jackson", "Wilmes", "Haas", "Judah", "Jackson", "McGrath", "Klutka", "Misbach", "Williams", "Solsberry", "Smith", "Downs", "Williams", "Hennis", "Lieberg", "Tang", "User", "Leonardo", "Schwalm", "Murphy", "Pavey", "Farrell", "Fereday", "Blanchard", "Kushubar", "Davis", "Lampton", "Davis", "Rexrode", "Notier", "Karman", "Leber", "Bailey"][Math.floor(Math.random()*216)];
+   	var type = ["town", "ton", "land", "ville", "berg", "burgh", "borough", "bury", "view", "port", "mouth", "stad", "furt", "chester", "mouth", "fort", "haven", "side", "shire"][Math.floor(Math.random()*18)];
+	var city = name + type;
+    this.doType(locator, city);
+}
+
+Selenium.prototype.doStoreRandomCity = function(locator){
+	var name = ["Shriner", "Maggard", "Bornhauser", "Alexander", "Gearhiser", "Crist", "Evans", "Fountain", "Feathers", "Gay", "Lintner", "Richardson", "Tyler", "McGalliard", "Bramble", "Kaelin", "Ekart", "Todorich", "Rowe", "Williams", "Kreydik", "O'Malley", "Ashcraft", "Boutote", "Gerdon", "Knisely", "Dunn", "Dawson", "Wade", "Coon", "Lepping", "Gaffney", "Laureano", "Grabbe", "Latshaw", "Bell", "Brock", "Rockey", "Brock", "Smith", "Wilson", "Sargeant", "Hunter", "Hart", "Cobb", "Jones", "Henderson", "Zinser", "Dexter", "Washington", "Hogan", "Lutes", "Anderson", "Thompson", "Bilanovic", "Smith", "Pool", "Heilig", "Zipper", "MacGeorge", "Massey", "Jones", "McDougale", "Hancock", "Rishel", "Jones", "Keller", "Johnson", "Lyons", "Sadler", "Trujillo", "Pool", "Clinefelter", "Brady", "Faber", "Tinsley", "Rittenhouse", "Heckard", "Rittenhouse", "Mandzo", "Benson", "Grabbe", "Rittenhouse", "Robey", "Bush", "Hartvigsen", "Heckard", "Espinoza", "Johnson", "Parrish", "Kleyer", "Schuler", "Henry", "Smith", "Thien", "Harper", "Hatcher", "Kaufman", "Oliver", "Bitler", "Brussese", "Lazarewicz", "Sexton", "Derossett", "Heckard", "Brown", "Kestler", "Bitler", "Johnson", "Lutes", "Sizemore", "Mitchell", "Tyree", "Strain", "Karczewski", "Cady", "Orm", "Petty", "Baldon-Gutter", "Phillips", "Perry", "Shepherd", "Roller", "Lay", "Nash", "Fox", "Ginn", "Bell", "Hartzog", "Carter", "Cooper", "Hall", "Anderson", "Lembcke", "Wheeler", "Akhtar", "Walls", "Ennis", "Books", "Soule ", "Lynn", "Burch", "Leake", "Larimore", "Griffin", "Orm", "Bibbs", "Leitch", "Ahlbrand", "Schuler", "Conrad", "Eigelbach", "Harris", "Hayes", "Smith", "Magda", "Welsh", "Hanson", "Hutzell", "Gentzel", "Baise", "Reed", "Bonistalli", "Delich", "Werts", "Lucas", "Hibbard", "Salyer", "Boyd ", "Winchell", "Lampton", "Grigsby", "Sattich", "Gouge", "Van Laan", "Gettis", "Kilgore", "Hill", "Hennis", "Spaulding", "Jacobsen", "Elsesser", "DeJohns", "Jackson", "Wilmes", "Haas", "Judah", "Jackson", "McGrath", "Klutka", "Misbach", "Williams", "Solsberry", "Smith", "Downs", "Williams", "Hennis", "Lieberg", "Tang", "User", "Leonardo", "Schwalm", "Murphy", "Pavey", "Farrell", "Fereday", "Blanchard", "Kushubar", "Davis", "Lampton", "Davis", "Rexrode", "Notier", "Karman", "Leber", "Bailey"][Math.floor(Math.random() * 216)];
+   	var type = ["town", "ton", "land", "ville", "berg", "burgh", "borough", "bury", "view", "port", "mouth", "stad", "furt", "chester", "mouth", "fort", "haven", "side", "shire"][Math.floor(Math.random()*18)];
+	var city = name + type;
+    this.doStore(city, locator);
+}
+
+Selenium.prototype.doTypeRandomDash = function(locator) {
+    var dates = new Date();
+    var day = Math.floor((Math.random()*30)+1);
+    if (day < 10){
+        day = '0' + day;
+    }
+    var month = Math.floor((Math.random()*12)+1);;
+    if (month < 10){
+        month = '0' + month;
+    }
+    var year = Math.floor((Math.random()*60)+1929);;
+    var prettyDay = month + '-' + day + '-' + year;
+    this.doType(locator, prettyDay);
+}
